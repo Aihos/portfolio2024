@@ -1,11 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-
 import Home from "./pages/Home";
-import Projet from "./pages/Projet";
-
-
-
+import Projets from "./pages/Projets";
 import Page404 from "./pages/Page404";
 import { createContext } from "react";
 
@@ -17,8 +12,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
-         <Route path="/Projet" element={<Projet/>}></Route> 
-        
+         
+          <Route path="/Projets/" element={<Projets/>}></Route>
           <Route path="*" element={<Page404 />}></Route>
         </Routes>
       </BrowserRouter>

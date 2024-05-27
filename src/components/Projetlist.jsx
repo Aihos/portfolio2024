@@ -2,7 +2,7 @@
 import React from "react";
 import Data from "../data.json";
 
-const PersonnageList = ({ openPopup }) => {
+const Projetlist = ({ openPopup }) => {
   // Utilisez les données comme bon vous semble
   const persos = Data.persos;
 
@@ -21,4 +21,4 @@ const PersonnageList = ({ openPopup }) => {
   );
 };
 
-export default PersonnageList;
+export default Projetlist;

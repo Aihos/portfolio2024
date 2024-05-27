@@ -9,7 +9,8 @@ function Navbar() {
            <NavLink to="/"><div/></NavLink>
             <ul>
                
-                <li><NavLink to="/projet">Projets</NavLink></li>
+                <li><NavLink to="/Projets">Projets</NavLink></li>
+               
                 
             </ul>
         </nav> 
