@@ -23,6 +23,11 @@
       { "id": 5, "title": "Plaine", "src": "https://dev.timmatane.ca/etudiants/2021/lerayh/ImageWardstone/soleil.png"},
       { "id": 6, "title": "Nuage", "src": "https://dev.timmatane.ca/etudiants/2021/lerayh/ImageWardstone/fond/nuage.svg"},
       {"id":7, "title": "Planete", "src": "https://dev.timmatane.ca/etudiants/2021/lerayh/ImageWardstone/fond/planete.svg"}
+      ],
+      "projet":[
+
+        {"id":1, "nom": "Projet 1", "img": "/image/arenaroad.jpg", "desc" : "Lorem ipsus ...." },
+        {"id":1, "nom": "Projet 2", "img": "/image/ciddddd.png", "desc" : "Lorem ipsus ...." }
       ]
 
   }

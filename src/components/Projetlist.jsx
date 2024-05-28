@@ -4,15 +4,16 @@ import Data from "../data.json";
 
 const Projetlist = ({ openPopup }) => {
   // Utilisez les données comme bon vous semble
-  const persos = Data.persos;
+  const projet = Data.projet;
 
   return (
     <div>
-      <h2>Liste des utilisateurs</h2>
+      <h2>Liste des projets</h2>
       <ul>
-        {persos.map(persos => (
-          <li key={persos.id}>
-           <button onClick={() => openPopup(persos)}>Voir détails <img src={persos.img} alt="" />
+        {projet.map(projet => (
+          <li key={projet.id}>
+            <h2>{projet.nom}</h2>
+           <button onClick={() => openPopup(projet)}>Voir détails <img src={projet.img} alt="" />
            </button>
           </li>
         ))}
