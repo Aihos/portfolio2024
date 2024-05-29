@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import "../css/accueil.css";
 import Data from "../data.json";
 import Projetlist from "../components/Projetlist";
+import PresentationPortfolio from "../components/PresentationPortfolio";
 
 
 
@@ -27,6 +28,8 @@ function Home() {
                 <main className="">
              {/*    <Projetlist  openPopup={openPopup} /> */}
               <h1>HOME</h1>
+
+              <PresentationPortfolio/>
                 </main>
 
             </div>

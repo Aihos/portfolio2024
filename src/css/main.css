@@ -21,6 +21,7 @@ width: 100%;
   align-items: center;
 justify-items: center;
 max-height: 100px;
+border-bottom: 1px solid #222222;
 
 
 }
@@ -78,6 +79,47 @@ h1{
   color: #000;
 }
 
+.portfolio{
+  display: flex;
+
+  border-bottom: 1px solid #222222;
+  border-top: 1px solid #222222;
+  min-height: 80vh;
+  width: 100%;
+}
+
+.theme{
+
+  width: 20%;
+  border-right: 1px solid #222222;
+}
+
+.ensembleProjet{
+  width: 80%;
+  display: flex;
+flex-direction: row;
+/*   justify-content: space-around; */
+  align-items: center;
+
+}
+
+.ensembleProjet div{
+
+  border-right: 1px solid #222222;
+  height: 100%;
+}
+
+.projetContainer{
+
+  background-size: cover;
+  background-position: center;
+
+  color: white; /* Ou n'importe quelle couleur qui se démarque de l'image de fond */
+  text-shadow: 1px 1px 2px black; /* Pour rendre le texte plus lisible */
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
 
 
 

@@ -27,7 +27,8 @@
       "projet":[
 
         {"id":1, "nom": "Projet 1", "img": "/image/arenaroad.jpg", "desc" : "Lorem ipsus ...." },
-        {"id":1, "nom": "Projet 2", "img": "/image/ciddddd.png", "desc" : "Lorem ipsus ...." }
+        {"id":2, "nom": "Projet 2", "img": "/image/arenaroad.jpg", "desc" : "Lorem ipsus ...." },
+        {"id":3, "nom": "Projet 3", "img": "/image/ciddddd.png", "desc" : "Lorem ipsus ...." }
       ]
 
   }
