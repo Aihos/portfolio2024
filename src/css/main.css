@@ -90,8 +90,24 @@ h1{
 
 .theme{
 
-  width: 20%;
+  width: 10%;
   border-right: 1px solid #222222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme h2{
+  font-family: 'Poiret One', cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transform: rotateZ(270deg);
 }
 
 .ensembleProjet{
@@ -107,6 +123,7 @@ flex-direction: row;
 
   border-right: 1px solid #222222;
   height: 100%;
+  width: 100%;
 }
 
 .projetContainer{
@@ -117,10 +134,45 @@ flex-direction: row;
   color: white; /* Ou n'importe quelle couleur qui se démarque de l'image de fond */
   text-shadow: 1px 1px 2px black; /* Pour rendre le texte plus lisible */
 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.433);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
+.projetContainer h2{
+  font-family: 'Poiret One', cursive;
+  font-size: 1.5rem;
+    margin: 0;
+  padding: 0;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transform: rotateZ(270deg);
+  width: 100%;
+}
+
+.ensembleHome{
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+}
+
+.ensembleHome img{
+
+  width: 100%;
+  
+/*   object-fit: cover; */
+}
+
+.presentationhome{
+
+  display: flex;
+  flex-direction: column;
+
+}
 
 
 

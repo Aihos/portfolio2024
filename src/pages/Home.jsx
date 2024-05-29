@@ -7,6 +7,9 @@ import "../css/accueil.css";
 import Data from "../data.json";
 import Projetlist from "../components/Projetlist";
 import PresentationPortfolio from "../components/PresentationPortfolio";
+import PresentationHome from "../components/PresentationHome";
+import PresentationProfil from "../components/PresentationProfil";
+import PresentationContact from "../components/PresentationContact";
 
 
 
@@ -27,9 +30,13 @@ function Home() {
               
                 <main className="">
              {/*    <Projetlist  openPopup={openPopup} /> */}
-              <h1>HOME</h1>
-
+             {/*  <h1>HOME</h1> */}
+             <PresentationHome/>
               <PresentationPortfolio/>
+              <PresentationProfil/>
+              <PresentationContact/>
+             
+              
                 </main>
 
             </div>
