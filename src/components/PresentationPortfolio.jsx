@@ -9,12 +9,14 @@ const PresentationPortfolio = ({ openPopup }) => {
   return (
     <div className="portfolio">
       <div className="theme">
-        <h2>Portfolio</h2>
+       
       </div>
       <div className="ensembleProjet">
         {projet.map(projet => (
-          <div key={projet.id} className="projetContainer" style={{ backgroundImage: `url(${projet.img})` }}>
+         <div key={projet.id} className="projetContainer" >
             <h2>{projet.nom}</h2>
+            <p>{projet.desc}</p>
+            <img className="iconeprojet" src={projet.img} alt="" />
           </div>
         ))}
       </div>

@@ -13,169 +13,427 @@
   src: url('../font/DeBorstel\ Brush-Reduced.ttf') format('truetype');
 
 }
+@font-face {
 
-nav{
-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  font-family: "MeloBold";
+
+  src: url('../font/Melodrama-Bold.otf') format('opentype');
+
+}@font-face {
+
+  font-family: "MeloRegular";
+
+  src: url('../font/Melodrama-Regular.otf') format('opentype');
+
+}
+@font-face {
+
+  font-family: "MeloMedium";
+
+  src: url('../font/Melodrama-Medium.otf') format('opentype');
+
+}
+
+html{
+
+padding: 0;
+margin: 0;
+background-image: url(/public/image/pixelcote.png);
+background-size:contain;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: right;
+
+
+
+}
+body{
+margin-left: 1rem;
+margin-right: 1rem;  
+}
+
+.home{
+
+ /*  background: white; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+min-height: 100vh;
+  flex-direction: row;
+  
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Poiret One";
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #000000;
+  color: white;
+  width: 10%;
+  max-width: 7%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 30px;
   align-items: center;
-justify-items: center;
-max-height: 100px;
-border-bottom: 1px solid #222222;
-
+  position: fixed;
+  min-height: 87vh;
 
 }
 
 nav ul{
-  width: 100%;
+
+  padding: 0;
+  margin: 0;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  height: 40%;
 }
 
-nav ul li a{
-  text-decoration: none;
-  color: #000;
-  font-size: 1.5rem;
-  font-family: 'Poiret One', cursive;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: 0.3s;
+nav img {
 
-}
-
-nav p{
-  text-decoration: none;
-  color: #000;
-  font-size: 1.5rem;
-  font-family: 'Poiret One', cursive;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: 0.3s;
-
-}
-
-nav #logo {
-
-    width: 100px;
-    height: 100px;
-    background-image: url(../css/img/logoportfolio.svg); 
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center;
+  width: 4rem ;
+/*   height: ; */
 
 
 }
 
-h1{
-  font-family: 'Deborstel', cursive;
-  font-size: 3rem;
+nav ul li img {
+  width: 3rem;
+ 
+}
+
+nav li {
+  list-style-type: none;
+  width: 100%;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+
+}
+
+main{
+  font-family: "MeloRegular";
+  font-size: 1.5em;
   text-align: center;
   margin: 0;
   padding: 0;
-  color: #000;
-}
-
-.portfolio{
-  display: flex;
-
-  border-bottom: 1px solid #222222;
-  border-top: 1px solid #222222;
-  min-height: 80vh;
+  /* background-color: white; */
+  color: black;
   width: 100%;
-}
-
-.theme{
-
-  width: 10%;
-  border-right: 1px solid #222222;
+  max-width: 90%;
+  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+margin-left: 10%;
 }
 
-.theme h2{
-  font-family: 'Poiret One', cursive;
-  font-size: 2rem;
-  text-align: center;
+.ensemblemain{
+
+/*   display: flex;
+ 
+  justify-content: space-between;
+  align-items: center; */
+  width: 90%;
+  max-width: 90%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+
+}
+
+.hauttete{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
   margin: 0;
   padding: 0;
-  color: #000;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transform: rotateZ(270deg);
+  align-items: center;
 }
+
+.txtpresentation h1{
+
+  font-size: 52px;
+  font-family: "MeloBold";
+  font-weight: bold;
+  text-align: left;
+  margin: 0;
+  padding-left: 1rem;
+}
+.txtpresentation p{
+
+  font-size: 32px;
+  font-family: "MeloRegular";
+  text-align: left;
+  font-weight: normal;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.gris{
+
+  background-color: #F5F5F7; 
+  border-radius: 15px; 
+  
+}
+
+.presentation{
+
+  display: flex;
+  flex-direction: row;
+  width: 40rem;
+  position: relative;
+}
+
+.presentation #avatar{
+
+  width: 12rem;
+  position: absolute;
+  top: -2rem;
+  right: -5rem;
+
+}
+
+.txtpresentation{
+
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+width: 100%;
+}
+
+.vignetdate{
+
+  width: 13rem;
+  max-width: 13rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 3rem;
+  justify-content: space-around;
+}
+
+.vignetdate img{
+
+  width: 2.5rem;
+  height: 2rem;
+  
+}
+.vignetdate p{
+
+  font-size: 1.5rem;
+  font-family: "Melobold";
+  margin: 0;
+  padding: 0;
+  margin-left: 1rem;
+
+}
+.vignetdate div{
+max-height: 3rem;
+
+}
+
+/*  */
+
+.vignetMeteo{
+
+  width: 7rem;
+  max-width: 7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 3rem;
+  justify-content: space-around;
+}
+
+.vignetMeteo img{
+
+  width: 2.5rem;
+  height: 2rem;
+  
+}
+.vignetMeteo p{
+
+  font-size: 1.5rem;
+  font-family: "Melobold";
+  margin: 0;
+  padding: 0;
+  margin-left: 1rem;
+
+}
+.vignetMeteo div{
+max-height: 3rem;
+
+}
+
+/*      */
+.texteLorem{
+
+  font-size: 1.25rem;
+  font-family: "MeloRegular";
+ 
+  text-align: left;
+  margin: 0;
+  padding: 1rem;
+  width: 80%;
+  color: black;
+  font-weight:600;
+  padding: 2rem;
+}
+
+/*  */
+.directionBas{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;  
+}
+
+.directionBas div{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+}
+
+.directionBas p{
+
+  margin: 0;
+}
+
+.directionBas .texteLorem{
+
+  padding: 0.5rem;
+}
+
+.directionBas img{
+
+  width: 3.5rem;
+  height: 3rem;
+}
+
+/* Portfolio */
 
 .ensembleProjet{
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
   width: 80%;
-  display: flex;
-flex-direction: row;
-/*   justify-content: space-around; */
-  align-items: center;
+/*   overflow-y: scroll; */
+flex-wrap: wrap ;
+margin-top: 10rem;
+position: relative;
 
 }
 
-.ensembleProjet div{
-
-  border-right: 1px solid #222222;
-  height: 100%;
-  width: 100%;
+.portfolio{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    margin: 0;
+    padding: 0;
+  
 }
 
 .projetContainer{
 
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
 
-  color: white; /* Ou n'importe quelle couleur qui se démarque de l'image de fond */
-  text-shadow: 1px 1px 2px black; /* Pour rendre le texte plus lisible */
+.projetContainer img{
 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.433);
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+ 
+  z-index: 1;
+  filter: brightness(60%);
+
 }
 
 .projetContainer h2{
-  font-family: 'Poiret One', cursive;
-  font-size: 1.5rem;
-    margin: 0;
+
+  font-size: 3rem;
+  font-family: "MeloBold";
+  text-align: left;
+  margin: 0;
   padding: 0;
-  color: #000;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transform: rotateZ(270deg);
-  width: 100%;
-}
-
-.ensembleHome{
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 90%;
-}
-
-.ensembleHome img{
-
-  width: 100%;
+  position: absolute;
+  bottom: 15%;
+left: 10%;
   
-/*   object-fit: cover; */
+  color: white;
+  z-index: 2;
+
 }
 
-.presentationhome{
+.projetContainer p{
 
+  font-size: 1.5rem;
+  font-family: "MeloRegular";
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 8%;
+  left: 10%;
+  color: white;
+  z-index: 2;
+
+}
+
+/* Mail */
+
+.fixed{
+
+  position: fixed;
+  bottom: 0;
+  right: 40%;
+  margin: 1rem;
+  padding: 1rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  background-color: #000000;
+  border-radius: 15px;
   display: flex;
-  flex-direction: column;
-
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 3;
 }
+.fixed img{
 
-
-
-
-
-/* Path: wiki-epouvanteur/src/css/main.css */
+  width: 2rem;
+  height: 2rem;
+}
